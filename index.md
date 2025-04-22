@@ -14,7 +14,6 @@ The second dataset will consist of data for conducting the test (and available f
 
 ### Dataset Size
 
-The human subjects dataset is expected to be on the order of MB (100-999 MB) since we anticipate testing around 40 participants on about 60 trials alongside responses to questionnaires.
 The metadata dataset will be larger than the human subjects data due to the use of video files alongside code. This dataset is expected to be on the order of a few GB (1-9 GB) since there will be around 40-50 video files that are around 30 seconds each.
 
 # Roles and Responsibilities
