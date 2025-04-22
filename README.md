@@ -12,20 +12,6 @@ Since the low-lighting and murky water both impair visual clarity, one possibly 
 
 In order to answer this question, we will be showing human subjects pre-recorded grasps with different tactile displays and a camera feed that is artificially impaired by adding a significant blur to it. The impaired camera feed is done so that users will have to rely on the tactile information to make their decision about the success of a grasp.
 
-## Dataset Description
-
-### Human Subjects Data
-
-The first dataset will consist of all relevant human subject data. This includes demographic information (age, sex, race, home country), general attitudes towards robots, familiarity with robots, per-trial information (accuracy, confidence, reaction-time), and the overall task information (subjective task-load rating). All data will be stored in a spreadsheet alongside a corresponding subject ID and task version ID to match the subject and display to the data obtained. The data will be collected and saved to a spreadsheet as the user interacts with the computer software by manually entering the information or having it collected automatically throughout the experiment.
-
-### Metadata
-
-The second dataset will consist of data for conducting the test (and available for replication of the study). This will be the metadata, which includes the code for displaying the interface, the recordings of the camera feed (as video files) and tactile feed (as spreadsheets) for each grasp, and the code for all analyses performed in the study. This data will be collected prior to the study by storing recorded sensory feeds from a robotic arm that is currently in the lab.
-
-## Dataset Size
-
-The sizes of the two datasets only slightly differ. The human subjects dataset is expected to be on the order of MB (100-999 MB) since we anticipate testing around 40 participants. However, the metadata dataset will be slightly larger due to the size of the video files and code. This dataset is expected to be on the order of a few GB (1-5 GB) since there will be around 40-50 video files that are not too long in length (~10 seconds each).
-
 ## About the Author
 
 The team thus far consists of Michael Pfeiffer. Michael is a Graduate Student Researcher in Robotics at OSU.
