@@ -104,3 +104,73 @@ Data will be stored on an online repository in two places: GitHub and DSpace. Th
 # 5. Backup Strategy
 
 To ensure that data is not lost, the backup strategy will consist of having data be stored locally as well as on two cloud servers (GitHub and DSpace). The local repository ensures that data can be accessed offline and the two cloud servers ensure that data can be recovered if the local machine is stolen or damaged, even if one of the two cloud servers is lost. Regarding data being transferred when graduating, this is accounted for by giving administrator access to the lab PI.
+
+# 6. Data Organization
+
+The data will be organized in hierarchical format, where the highest level would be the “Data” folder consisting of a folder for the different conditions for the experiment, namely: “Condition1,” “Condition2,” and “Condition3.” In each of the folders for the condition, a CSV file will be stored for each human subject. The name of the csv will be the de-identified ID given to the human test subject.
+
+# 7. Version Control
+
+To keep track of different versions, data will be uploaded to GitHub as it is gathered. This allows us to have version control since GitHub stores previous versions of the project if we ever need to revert to a previous version or check on the update history.
+
+# 8. Metadata Description
+
+The metadata generated during the project will consist of code for the simulated telerobotic system, corresponding recordings of the sensor information from different grasps, programs used for the analysis, and added documentation of the metadata and data. Regarding reuse of the data, it is crucial then to make sure the metadata is documented in a consistent, well-understood format and have it be open-access. For this reason, we can use the Dublin Core metadata standard which is a popular standard that is described as being applicable to a wide-range of data to a wide range of fields (https://guides.lib.utexas.edu/omeka/dublin_core). This standard will be useful for describing the two datasets mentioned in the first assignment since, it describes 15 data fields for the standard:
+
+> 1. Title
+> 
+> 2. Author/Creator
+> 
+> 3. Subject and Keywords
+> 
+> 4. Description
+> 
+> 5. Publisher
+> 
+> 6. Other Contributor
+> 
+> 7. Date
+> 
+> 8. Resource Type
+>  
+> 9. Format
+> 
+> 10. Resource Identifier
+> 
+> 11. Source
+> 
+> 12. Language
+> 
+> 13. Relation
+> 
+> 14. Coverage
+> 
+> 15. Rights Management
+
+All or a subset of the data fields may apply to any data that is being documented. Examples of each are given on the standard’s official website (https://www.dublincore.org/specifications/dublin-core/usageguide/2001-04-12/generic/).
+
+# 9. Data Gathering
+
+The information will be generated during testing trials of a human test subject. CSV files will be generated as the user interacts with the system and will be uploaded to GitHub upon the user’s completion of all three test conditions. Additional programs that would be used for the data analysis will be added after all data has been gathered.
+
+# 10. Metadata Strategy
+
+For how to apply the metadata standard, we can use the given fields (e.g., Title, Author/Creator, Subject and Keywords, Description, etc.) to describe each file and directory. To then describe the general structure of the files/repositories, we can use the “Relation” field as part of the Dublin Core format to indicate which repository a file/folder is a part of.
+
+# 11. Data Sharing and Preservation
+
+Due to the nature of the data consisting of demographic information, performance data, and post task questionnaires for human subjects, these data need to be considered separately from all remaining data items to follow all ethical standards for human subjects testing. The remaining data items consist of the surrounding metadata to create the testing environment and analyze the results. These data include the code for the program, the recorded video feed, the recorded touch-sensor feed (as a CSV), pictures of the experimental setup, and the code for analyzing results. All data will be shared upon submission to the Human-Robot Interaction (HRI) 2026 Conference deadline (October 1) and will be managed through the PI’s account for 5 years, after which, the data will be reassessed to determine continued management.
+
+## 11.1. Human Subjects Data
+
+To ensure that there is minimal risk to the human subject, the performance data and post-task questionnaire will be de-identified by having a random identifier that is not tied to their name. The CSV files for the data will initially be saved on a private GitHub repository and later archived for unrestricted use using the Open Science Framework.
+
+As for the demographic information, to avoid the Mosaic effect where one may potentially identify a subject through separate pieces of information, the data will be aggregated before sharing through the Open Science Framework with no restrictions. As an extra step of security, demographic data will be saved on a separate Qualtrics form, not on the GitHub repository. It should be noted that having access to only the aggregated data does not have a significant effect on the reproducibility of the study since the demographic data is only to ensure we have a representative sample, not to perform any analysis.
+
+## 11.2. Metadata
+
+The metadata does not have any ethical standard that needs to be followed. Because of this, we can have all of the metadata stored in our private GitHub repository and then archived using the Open Science Framework with no restriction.
+
+# 12. Data Licensing and Reuse
+
+To allow for open science, all data shared will be licensed under the CC-BY 4.0 license for open and unrestricted use and reuse as long as attribution is given.
